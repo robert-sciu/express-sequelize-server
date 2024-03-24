@@ -2,7 +2,7 @@ const { Sequelize } = require("sequelize");
 // const config = require("./config")[process.env.NODE_ENV || "development"];
 const config = require("./config")["aws"];
 
-console.log(config.postgres.username);
+console.log(config.postgres.options.username);
 
 const sequelize = new Sequelize(config.postgres.options);
 
