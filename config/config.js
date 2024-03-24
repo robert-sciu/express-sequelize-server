@@ -42,6 +42,7 @@ module.exports = {
         password: process.env.RDS_PASSWORD,
         port: process.env.RDS_PORT,
         dialect: "postgres",
+        database: "postgres-dev",
       },
     },
   },
