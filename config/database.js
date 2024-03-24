@@ -3,6 +3,7 @@ const { Sequelize } = require("sequelize");
 const config = require("./config")["aws"];
 
 console.log(config.postgres.options.username);
+console.log(config.postgres.options.dialect);
 
 const sequelize = new Sequelize(config.postgres.options);
 
