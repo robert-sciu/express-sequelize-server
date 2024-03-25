@@ -43,6 +43,12 @@ module.exports = {
         port: 5432,
         dialect: "postgres",
         database: "database_1",
+        dialectOptions: {
+          ssl: {
+            require: true,
+            rejectUnauthorized: false, // added based on the recommendation from Sequelize documentation
+          },
+        },
       },
     },
   },
